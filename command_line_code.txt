@@ -1,0 +1,4 @@
+hadoop jar hadoop-streaming-2.6.4.jar -input 
+/user/ec2-user/employee.txt /user/ec2-user/customer.txt -output 
+/user/ec2-user/output -mapper Mapper.py -reducer Reducer.py -file 
+Mapper.py -file Reducer.py
